@@ -34,7 +34,7 @@ function paginasCartas() {
 			var p = document.createElement('p');
 			var nombre = document.createTextNode(i);
 
-			image.src = '/assets/images/Brawlers/' + carpeta + '/' + i + '.png';
+			image.src = 'assets/images/Brawlers/' + carpeta + '/' + i + '.png';
 			//image.loading = 'lazy';
 
 			div.classList.add('carta');
@@ -112,7 +112,7 @@ function generadorRandom() {
 		const p = document.createElement('p');
 		const nombre = document.createTextNode(brawlerGanador);
 
-		image.src = '/assets/images/Brawlers/' + carpetaGanadora + '/' + brawlerGanador + '.png';
+		image.src = 'assets/images/Brawlers/' + carpetaGanadora + '/' + brawlerGanador + '.png';
 
 		p.classList.add('borrar');
 		p.appendChild(nombre);
@@ -183,7 +183,7 @@ function paginaModos() {
 		var p = document.createElement('p');
 		var nombre = document.createTextNode(modo);
 
-		image.src = '/assets/images/Modos/' + modo + '.png';
+		image.src = 'assets/images/Modos/' + modo + '.png';
 
 		div.classList.add('carta');
 		div.onclick = function() {
@@ -246,7 +246,7 @@ function generarModoRandom() {
 	const p = document.createElement('p');
 	const nombre = document.createTextNode(modoGanador);
 
-	image.src = '/assets/images/Modos/' + modoGanador + '.png';
+	image.src = 'assets/images/Modos/' + modoGanador + '.png';
 
 	p.classList.add('borrar');
 	p.appendChild(nombre);
