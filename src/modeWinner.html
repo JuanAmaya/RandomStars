@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/styles/style.css">
+
+        <title>Random Stars</title>
+    </head>
+    <body class="body-winner" onload="generarModoRandom(), colorFondo()">
+        <header class="header-winner">
+            <p class="winner-title">
+                El Modo es:
+            </p>
+        </header>
+
+        <main>
+            <div class="winner-brawler">
+                <div class="brawler-image">
+                </div>
+            </div>
+
+            <div class="botones-ganador">
+                <button class="reroll" onclick="generarModoRandom()">
+                    <p>Reroll</p>
+                </button>
+                <a href="modeSelection.html" class="change-brawler">
+                    <p>Quitar/Agregar Modo</p>
+                </a>
+                <a href="../index.html" class="home">
+                    <p>Menú</p>
+                </a>
+            </div>
+            <br><br>
+        </main>
+
+        <script type="text/javascript" src="../assets/js/main.js"></script>
+    </body>
+</html>

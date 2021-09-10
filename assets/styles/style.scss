@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap');
+
+@import './variables';
+
+// Funciones
+@mixin creacionCajas($colorFondo, $nombreArea) {
+	width: 150px;
+	height: 250px;
+	overflow: hidden;
+	border-radius: 20px;
+	background: $colorFondo;
+	grid-area: $nombreArea;
+}
+
+@mixin acomodoImagenes($alto, $izquerda, $indice, $tamano) {
+	position: relative;
+	z-index: 1;
+	width: $tamano;
+	top: $alto;
+	left: $izquerda;
+	z-index: $indice;
+}
+
+// HTML
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: 'Merriweather Sans', sans-serif;
+	height: 100%;
+	background: $fondo;
+	background-repeat: no-repeat;
+	font-size: 11px;
+	transition: all .5s ease;
+}
+
+.cambioFondo {
+	background: $segundo-fondo;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+
+	.logo {
+		height: 130px;
+		width: 160px;
+		margin-top: 1rem;
+	}
+
+	.ajustes {
+		width: 50px;
+		position: absolute;
+		right: 1rem;
+		top: 1rem;
+	}
+}
+
+.botones {
+	height: 100vh;
+	max-width: 500px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "brawler" "modo";
+	justify-items: center;
+	align-items: center;
+	filter: drop-shadow($formato-sombra);
+	position: relative;
+	z-index: 0;
+
+	a {
+		text-decoration: none;
+	}
+
+	.brawler {
+		@include creacionCajas($cartaBrawler, brawler);
+	}
+
+	.modo {
+		@include creacionCajas($cartaModo, modo);
+	}
+
+	h2 {
+		position: relative;
+		font-size: 2rem;
+		color: $letra;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		top: 195px;
+		z-index: 10;
+	}
+
+	.titulo-carta {
+		height: 70px;
+		background: $fondoBorroso;
+		backdrop-filter: blur(10px);
+		border-radius: 0 0 20px 20px;
+		position: relative;
+		top: 140px;
+		z-index: 5;
+	}
+
+	.imagenes-carta {
+		user-select: none;
+		overflow: visible;
+
+		.emz {
+			@include acomodoImagenes(-70px, -40px, 3, 150px);
+		}
+
+		.max {
+			@include acomodoImagenes(-330px, 70px, 2, 120px);
+		}
+
+		.spike {
+			@include acomodoImagenes(-630px, 5px, 1, 150px);
+		}
+
+		.gemGrab {
+			@include acomodoImagenes(-30px, -20px, 2, 120px);
+		}
+
+		.brawlball {
+			@include acomodoImagenes(-140px, 80px, 1, 90px);
+		}
+
+		.siege {
+			@include acomodoImagenes(-350px, -10px, 3, 160px);
+		}
+	}
+}
+
+.settings {
+	height: 100vh;
+	color: $letra;
+
+	header {
+		a {
+			text-decoration: none;
+
+			i {
+				color: $letra;
+				font-size: 3rem;
+				position: absolute;
+				left: 0;
+				background: $fondoBorroso;
+				padding: .1rem;
+				border-radius: 0 0 10px 0;
+			}
+		}
+
+		h1 {
+			font-size: 3rem;
+		}
+	}
+
+	main {
+		h2 {
+			font-size: 2rem;
+		}
+	}
+}
+
+.botones-ganador button,
+.botones-ganador a {
+	box-shadow: $formato-sombra;
+}
+
+@import './seleccionBrawler';
+@import './winnerBrawler';
+@import './pantallasGrandes';
