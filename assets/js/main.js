@@ -93,7 +93,7 @@ function generadorRandom() {
 	// Seleccionar la carpeta
 	const carpetas = [ '1-TrophyRoad', '2-Rare', '3-SuperRare', '4-Epic', '5-Mythic', '6-Legendary', '7-Chromatic' ];
 
-	// Divs
+	// Div
 	const divGanador = document.getElementsByClassName('winner-brawler')[0];
 	const divImgGanador = document.getElementsByClassName('brawler-image')[0];
 
