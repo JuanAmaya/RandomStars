@@ -19,8 +19,8 @@ body {
 }
 
 .cambioFondo {
-  background: -webkit-gradient(linear, left top, left bottom, from(#81237a), to(#ffbd8b));
-  background: linear-gradient(#81237a, #ffbd8b);
+  background: -webkit-gradient(linear, left top, left bottom, from(#48169d), to(#cb6dd6));
+  background: linear-gradient(#48169d, #cb6dd6);
 }
 
 header {

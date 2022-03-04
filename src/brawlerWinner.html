@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../assets/styles/style.css">
-        
-        <title>Random Stars</title>
-    </head>
-    <body class="body-winner" onload="generadorRandom(), colorFondo()">
-        <header class="header-winner">
-            <p class="winner-title">
-                El Brawler es:
-            </p>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
 
-        <main>
-            <div class="winner-brawler">
-                <div class="brawler-image">
-                </div>
-            </div>
+    <title>Random Stars</title>
+  </head>
+  <body class="body-winner" onload="generadorRandom(), colorFondo()">
+    <header class="header-winner">
+      <p class="winner-title">El Brawler es:</p>
+    </header>
 
-            <div class="botones-ganador">
-                <button class="reroll" onclick="generadorRandom()">
-                    <p>Reroll</p>
-                </button>
-                <a href="brawlerSelection.html" class="change-brawler">
-                    <p>Quitar/Agregar Brawler</p>
-                </a>
-                <a href="../index.html" class="home">
-                    <p>Menú</p>
-                </a>
-            </div>
-            <br><br>
-        </main>
+    <main>
+      <div class="winner-brawler">
+        <div class="brawler-image"></div>
+      </div>
 
-        <script type="text/javascript" src="../assets/js/main.js"></script>
-    </body>
+      <div class="botones-ganador">
+        <button class="reroll" onclick="generadorRandom()">
+          <p>Reroll</p>
+        </button>
+        <a href="brawlerSelection.html" class="change-brawler">
+          <p>Quitar/Agregar Brawler</p>
+        </a>
+        <a href="../index.html" class="home">
+          <p>Menú</p>
+        </a>
+      </div>
+      <br /><br />
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"
+      integrity="sha512-srGxQe2w7s50+5/nNgEVKYtBm15zRylJwdjxYnGEZr3mmHFJKFjA/ImA2OKizVzoIDX8XISMHDI1+az9pnumbQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="../assets/js/main.js"></script>
+  </body>
 </html>
