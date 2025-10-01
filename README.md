@@ -1,5 +1,5 @@
 # Random Stars (D1-RS)
-Una página web en donde puedes sacar de manera aleatoria algún brawler o modo del juego Brawl Stars, puedes incluso excluir personajes del resultado aleatorio.
+Una página web en donde puedes sacar de manera aleatoria algún brawler o modo del juego Brawl Stars, puedes incluso excluir personajes o modos del resultado aleatorio.
 
 ## Tecnologías Utilizadas:
 - HTML
